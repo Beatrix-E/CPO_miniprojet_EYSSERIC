@@ -29,12 +29,12 @@ public class CelluleLumineuse {
         System.out.println("État de la cellule : " + this.etat );
     }
 
-    // Méthode pour afficher X si la cellule est allumée, O si elle est éteinte
+    
     void afficherEtat() {
         if (this.etat==true) {
-            System.out.print("X"); // Allumée
+            System.out.print("X"); 
         } else {
-            System.out.print("O"); // Éteinte
+            System.out.print("O"); 
         }
     }
 }
