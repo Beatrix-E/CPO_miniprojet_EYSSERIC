@@ -15,13 +15,19 @@ public class CelluleLumineuse {
     }
 
     void eteindreCellule() {
-        
+        etat= false;
         
     void estEteint() {
-        
+        bool estEteinte=true;
+        if (etat==false) {
+            estEteinte=true;
+        }else{
+            estEteinte=false;
+        }
     }
     
     void getEtat() {
+        System.out.println(etat);
         
     }
     
