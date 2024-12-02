@@ -24,6 +24,13 @@ public class CelluleLumineuse {
     void getEtat() {
         
     }
+    
+    if (etat==true) {
+        System.out.print ("X");
+    }else{
+        System.out.print ("O");
+        
+    }
 }
 
     
