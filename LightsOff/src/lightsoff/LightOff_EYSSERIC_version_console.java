@@ -17,17 +17,26 @@ public class LightOff_EYSSERIC_version_console {
         // TODO code application logic here
         CelluleLumineuse cellule1 = new CelluleLumineuse(false);
         CelluleLumineuse cellule2 = new CelluleLumineuse(true);
+               
+        cellule1.getEtat(); 
+        cellule1.afficherEtat();
+        System.out.println(); 
         
+        cellule2.getEtat(); 
+        cellule2.afficherEtat();
+        System.out.println(); 
+       
         cellule1.activerCellule();
+        cellule1.getEtat(); 
+        cellule1.afficherEtat(); 
+        System.out.println(); 
+        
         cellule2.activerCellule();
+        cellule2.getEtat(); 
+        cellule2.afficherEtat(); 
+        System.out.println(); 
         
-        System.out.println(cellule1);
-        System.out.println(cellule2);
-        
-        
-        
-        
-        }
+    }
         
         
         
