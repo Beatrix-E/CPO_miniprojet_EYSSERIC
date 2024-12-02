@@ -9,6 +9,22 @@ package lightsoff;
  * @author beatr
  */
 public class CelluleLumineuse {
+    boolean etat=false;
+    void activerCellule() {
+        this.etat=! this.etat;
+    }
+
+    void eteindreCellule() {
+        
+        
+    void estEteint() {
+        
+    }
     
+    void getEtat() {
+        
+    }
+}
+
     
 }
