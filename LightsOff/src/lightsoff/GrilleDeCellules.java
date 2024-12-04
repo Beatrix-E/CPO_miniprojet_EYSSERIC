@@ -107,6 +107,23 @@ public class GrilleDeCellules {
         }
         return true;
     }
+    
+    
+     @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < nbLignes; i++) {
+            for (int j = 0; j < nbColonnes; j++) {
+                sb.append(matriceCellules[i][j].estEteint() ? "O" : "X");
+                if (j < nbColonnes - 1) {
+                    sb.append(" ");
+                }
+            }
+            sb.append("\n");
+        }
+        return sb.toString();
+    }
+}
 
 
 
