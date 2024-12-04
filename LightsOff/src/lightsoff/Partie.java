@@ -10,4 +10,13 @@ package lightsoff;
  */
 public class Partie {
     
+    GrilleDeJeu grille;
+    int nbCoups;
+    
+    public Partie() {
+        this.grille = new GrilleDeJeu(,); 
+        this.nbCoups = 0;
+    }
+
+    
 }
