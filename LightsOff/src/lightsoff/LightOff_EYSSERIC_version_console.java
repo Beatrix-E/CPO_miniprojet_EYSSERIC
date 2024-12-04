@@ -31,6 +31,20 @@ public class LightOff_EYSSERIC_version_console {
         cellule1.getEtat();  
         cellule1.afficherEtat();
        
+        
+        GrilleDeCellules grille = new GrilleDeCellules(5, 5); // Crée une grille de 5x5
+
+        System.out.println("Grille initiale :");
+        System.out.println(grille.toString());
+
+        grille.melangerMatriceAleatoirement(3); // Mélange la grille avec 3 tours
+        System.out.println("Grille après mélange :");
+        System.out.println(grille.toString());
+
+        grille.eteindreToutesLesCellules(); // Éteint toutes les cellules
+        System.out.println("Grille après extinction de toutes les cellules :");
+        System.out.println(grille.toString());
     }
 }
-  
+
+
