@@ -11,8 +11,8 @@ package lightsoff;
 import java.util.Scanner;
 
 public class Partie {
-    private GrilleDeCellules grille;
-    private int nbCoups;
+    GrilleDeCellules grille;
+    int nbCoups;
 
     public Partie(int nbLignes, int nbColonnes) {
         this.grille = new GrilleDeCellules(nbLignes, nbColonnes);
