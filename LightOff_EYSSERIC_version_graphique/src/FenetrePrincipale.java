@@ -12,14 +12,18 @@ import java.awt.GridLayout;
 import javax.swing.JButton;
 
 public class FenetrePrincipale extends javax.swing.JFrame {
-    
+    GrilleDeCellules grille;
     /**
      * Creates new form FenetrePrincipale
      */
     public FenetrePrincipale() {
+        GrilleDeCellules f;
+        
+        int nbCoups;
         initComponents();
         int nbLignes = 10;
         int nbColonnes = 10;
+        this.grille = new GrilleDeCellules(nbLignes, nbColonnes);
         PanneauGrille.setLayout(new GridLayout(nbLignes, nbColonnes));
         for (int i=0; i < nbLignes; i++) {
             for (int j=0; j < nbColonnes; j++ ) {
@@ -27,7 +31,12 @@ public class FenetrePrincipale extends javax.swing.JFrame {
                 PanneauGrille.add(bouton_cellule); // ajout au Jpanel PanneauGrille
             }
         }
-    }
+        public void initialiserPartie() {
+            grille.eteindreToutesLesCellules();
+            grille.melangerMatriceAleatoirement(10);
+        }
+        
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
