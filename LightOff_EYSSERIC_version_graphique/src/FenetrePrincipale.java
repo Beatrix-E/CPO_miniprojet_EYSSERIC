@@ -31,10 +31,12 @@ public class FenetrePrincipale extends javax.swing.JFrame {
                 PanneauGrille.add(bouton_cellule); // ajout au Jpanel PanneauGrille
             }
         }
-        public void initialiserPartie() {
-            grille.eteindreToutesLesCellules();
-            grille.melangerMatriceAleatoirement(10);
-        }
+    }
+
+    public void initialiserPartie() {
+        grille.eteindreToutesLesCellules();
+        grille.melangerMatriceAleatoirement(10);
+    }
         
     
 
