@@ -8,6 +8,7 @@
  * @author beatr
  */
 
+import java.awt.Graphics;
 import javax.swing.JButton;
 
 public class CelluleGraphique extends JButton {
