@@ -44,7 +44,14 @@ public class LightOff_EYSSERIC_version_console {
         grille.eteindreToutesLesCellules(); // Éteint toutes les cellules
         System.out.println("Grille après extinction de toutes les cellules :");
         System.out.println(grille.toString());
+    
+    
+    
+        Partie test1 =new Partie();
+        test1.initialiserPartie();
+        test1.lancerPartie();
     }
+
 }
 
 
