@@ -8,6 +8,7 @@
  * @author beatr
  */
 
+import LightsOff_EYSSERIC_version_console.GrilleDeCellules;
 import java.awt.GridLayout;
 import javax.swing.JButton;
 
@@ -67,12 +68,26 @@ public class FenetrePrincipale extends javax.swing.JFrame {
 
         PanneauGrille.setBackground(new java.awt.Color(0, 204, 204));
 
+        javax.swing.GroupLayout PanneauGrilleLayout = new javax.swing.GroupLayout(PanneauGrille);
+        PanneauGrille.setLayout(PanneauGrilleLayout);
+        PanneauGrilleLayout.setHorizontalGroup(
+            PanneauGrilleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        PanneauGrilleLayout.setVerticalGroup(
+            PanneauGrilleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(PanneauGrille, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 400, 400));
+
         btnLigne0.setText("btnLigne0");
         btnLigne0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLigne0ActionPerformed(evt);
             }
         });
+        getContentPane().add(btnLigne0, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
         btnLigne1.setText("btnLigne1");
         btnLigne1.addActionListener(new java.awt.event.ActionListener() {
@@ -80,6 +95,7 @@ public class FenetrePrincipale extends javax.swing.JFrame {
                 btnLigne1ActionPerformed(evt);
             }
         });
+        getContentPane().add(btnLigne1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, -1, -1));
 
         btnLigne2.setText("btnLigne2");
         btnLigne2.addActionListener(new java.awt.event.ActionListener() {
@@ -87,6 +103,7 @@ public class FenetrePrincipale extends javax.swing.JFrame {
                 btnLigne2ActionPerformed(evt);
             }
         });
+        getContentPane().add(btnLigne2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, -1));
 
         btnLigne3.setText("btnLigne3");
         btnLigne3.addActionListener(new java.awt.event.ActionListener() {
@@ -94,6 +111,7 @@ public class FenetrePrincipale extends javax.swing.JFrame {
                 btnLigne3ActionPerformed(evt);
             }
         });
+        getContentPane().add(btnLigne3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
 
         btnLigne4.setText("btnLigne4");
         btnLigne4.addActionListener(new java.awt.event.ActionListener() {
@@ -101,6 +119,7 @@ public class FenetrePrincipale extends javax.swing.JFrame {
                 btnLigne4ActionPerformed(evt);
             }
         });
+        getContentPane().add(btnLigne4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, -1, -1));
 
         btnLigne5.setText("btnLigne5");
         btnLigne5.addActionListener(new java.awt.event.ActionListener() {
@@ -108,6 +127,7 @@ public class FenetrePrincipale extends javax.swing.JFrame {
                 btnLigne5ActionPerformed(evt);
             }
         });
+        getContentPane().add(btnLigne5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, -1, -1));
 
         btnLigne6.setText("btnLigne6");
         btnLigne6.addActionListener(new java.awt.event.ActionListener() {
@@ -115,6 +135,7 @@ public class FenetrePrincipale extends javax.swing.JFrame {
                 btnLigne6ActionPerformed(evt);
             }
         });
+        getContentPane().add(btnLigne6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, -1, -1));
 
         btnLigne7.setText("btnLigne7");
         btnLigne7.addActionListener(new java.awt.event.ActionListener() {
@@ -122,6 +143,7 @@ public class FenetrePrincipale extends javax.swing.JFrame {
                 btnLigne7ActionPerformed(evt);
             }
         });
+        getContentPane().add(btnLigne7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, -1, -1));
 
         btnLigne8.setText("btnLigne8");
         btnLigne8.addActionListener(new java.awt.event.ActionListener() {
@@ -129,6 +151,7 @@ public class FenetrePrincipale extends javax.swing.JFrame {
                 btnLigne8ActionPerformed(evt);
             }
         });
+        getContentPane().add(btnLigne8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, -1, -1));
 
         btnLigne9.setText("btnLigne9");
         btnLigne9.addActionListener(new java.awt.event.ActionListener() {
@@ -136,58 +159,7 @@ public class FenetrePrincipale extends javax.swing.JFrame {
                 btnLigne9ActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout PanneauGrilleLayout = new javax.swing.GroupLayout(PanneauGrille);
-        PanneauGrille.setLayout(PanneauGrilleLayout);
-        PanneauGrilleLayout.setHorizontalGroup(
-            PanneauGrilleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanneauGrilleLayout.createSequentialGroup()
-                .addGap(43, 43, 43)
-                .addGroup(PanneauGrilleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PanneauGrilleLayout.createSequentialGroup()
-                        .addGroup(PanneauGrilleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnLigne0)
-                            .addComponent(btnLigne1)
-                            .addComponent(btnLigne2)
-                            .addComponent(btnLigne4))
-                        .addContainerGap(274, Short.MAX_VALUE))
-                    .addGroup(PanneauGrilleLayout.createSequentialGroup()
-                        .addGroup(PanneauGrilleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnLigne9)
-                            .addComponent(btnLigne8)
-                            .addComponent(btnLigne7)
-                            .addComponent(btnLigne6)
-                            .addComponent(btnLigne5)
-                            .addComponent(btnLigne3))
-                        .addGap(0, 0, Short.MAX_VALUE))))
-        );
-        PanneauGrilleLayout.setVerticalGroup(
-            PanneauGrilleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanneauGrilleLayout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addComponent(btnLigne0)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnLigne1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnLigne2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnLigne3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnLigne4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnLigne5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnLigne6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnLigne7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnLigne8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnLigne9)
-                .addContainerGap(104, Short.MAX_VALUE))
-        );
-
-        getContentPane().add(PanneauGrille, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 400, 400));
+        getContentPane().add(btnLigne9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
