@@ -67,7 +67,7 @@ public class FenetrePrincipale extends javax.swing.JFrame {
         //getContentPane().add(PanneauBoutonHorizontaux, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, nbLignes * 50 , 1 * 50));
         this.pack();
         this.revalidate();
-        // création du panneau de boutons verticaux (pour les lignes)
+        // création du panneau de boutons horizontaux (pour les lignes)
             for ( i = 0; i < nbColonnes; i++) {
                 JButton bouton_Colonne = new JButton();
                 bouton_Colonne.setText("C" + i);
@@ -93,7 +93,7 @@ public class FenetrePrincipale extends javax.swing.JFrame {
     //    getContentPane().add(DiagDec, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 1 * 50, 1 * 50));
         this.pack();
         this.revalidate();
-        // création du panneau de boutons verticaux (pour les lignes)
+        // création du panneau de boutons diag (pour les lignes)
         JButton bouton_Dd = new JButton();
         bouton_Dd.setText("Dd");
         ActionListener ecouteurClickDd = new ActionListener() {
