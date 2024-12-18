@@ -13,16 +13,17 @@ import javax.swing.JButton;
 
 public class FenetrePrincipale extends javax.swing.JFrame {
     GrilleDeCellules grille;
+    int nbCoups; 
+    int i;
     /**
      * Creates new form FenetrePrincipale
      */
     public FenetrePrincipale() {
-        GrilleDeCellules f;
         
-        int nbCoups;
         initComponents();
-        int nbLignes = 10;
-        int nbColonnes = 10;
+        GrilleDeCellules f;
+        int nbLignes = 5;
+        int nbColonnes = 5;
         this.grille = new GrilleDeCellules(nbLignes, nbColonnes);
         PanneauGrille.setLayout(new GridLayout(nbLignes, nbColonnes));
         for (int i=0; i < nbLignes; i++) {
