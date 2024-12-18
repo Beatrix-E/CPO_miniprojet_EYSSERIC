@@ -11,6 +11,7 @@ package LightsOff_EYSSERIC_version_console;
  */
 
 import LightsOff_EYSSERIC_version_console.CelluleLumineuse;
+import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JButton;
 
@@ -24,12 +25,23 @@ public class CelluleGraphique extends JButton {
         this.largeur = l;
         this.hauteur = h;
         this.celluleLumineuseAssociee = celluleLumineuseAssociee;
+        
+    }  
+    protected void paintComponent(Graphics g) {
+        int w = this.getWidth();
+        int h = this.getHeight();
+        if (celluleLumineuseAssociee.estEteint() == true) {
+            g.setColor(Color.red);
+        } else {
+            g.setColor(Color.yellow);
+        }
+        g.fillOval(2, 2, w - 4, h - 4);
+        super.paintComponent(g);
+        this.setText(celluleLumineuseAssociee.toString());
     }
+    
 
 // Methode gérant le dessin de la cellule
-    @Override
-    protected void paintComponent(Graphics g) {
-    super.paintComponent(g);
-    this.setText(celluleLumineuseAssociee.toString());
-    }
+   
+    
 }
