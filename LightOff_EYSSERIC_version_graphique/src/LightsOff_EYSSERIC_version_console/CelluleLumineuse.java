@@ -10,12 +10,14 @@ package LightsOff_EYSSERIC_version_console;
  */
 public class CelluleLumineuse {
     boolean etat=false;
-     void activerCellule() {
-        this.etat = !this.etat; 
-    }
-
     
-    void eteindreCellule() {
+public void activerCellule(){
+        if (this.etat == true){
+            this.etat = false;
+        }
+        else this.etat = true;
+}
+    public void eteindreCellule() {
         this.etat = false; 
     }
 
