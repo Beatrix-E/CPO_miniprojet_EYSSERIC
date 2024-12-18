@@ -128,7 +128,48 @@ public class GrilleDeCellules {
 
     
 
-    
+    package LightsOff;
+
+public class GrilleDeCellules {
+    public CelluleLumineuse[][] matriceCellules;
+
+    public GrilleDeCellules(int nbLignes, int nbColonnes) {
+        matriceCellules = new CelluleLumineuse[nbLignes][nbColonnes];
+        for (int i = 0; i < nbLignes; i++) {
+            for (int j = 0; j < nbColonnes; j++) {
+                matriceCellules[i][j] = new CelluleLumineuse();
+            }
+        }
+    }
+
+    public void activerCellule(int i, int j) {
+        matriceCellules[i][j].changerEtat();
+        if (i > 0) matriceCellules[i - 1][j].changerEtat(); // Haut
+        if (i < matriceCellules.length - 1) matriceCellules[i + 1][j].changerEtat(); // Bas
+        if (j > 0) matriceCellules[i][j - 1].changerEtat(); // Gauche
+        if (j < matriceCellules[i].length - 1) matriceCellules[i][j + 1].changerEtat(); // Droite
+    }
+
+    public void melangerMatriceAleatoirement(int nbIterations) {
+        for (int k = 0; k < nbIterations; k++) {
+            int i = (int) (Math.random() * matriceCellules.length);
+            int j = (int) (Math.random() * matriceCellules[0].length);
+            activerCellule(i, j);
+        }
+    }
+
+    public boolean cellulesToutesEteintes() {
+        for (int i = 0; i < matriceCellules.length; i++) {
+            for (int j = 0; j < matriceCellules[i].length; j++) {
+                if (matriceCellules[i][j].estAllume()) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+}
+
     
     
 
